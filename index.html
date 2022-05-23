@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina principal</title>
+</head>
+<body>
+  <img src="logotipo.png"/>
+  <h1>Bem-vindo a nossa empresa </h1>
+  <p>A nossa empresa</p>
+  <div id="servicos"></div>
+</body>
+
+<script>
+  var result = document.getElementById("servicos");
+
+  fetch('URL DO RESOURCE NO CROSS BUCKET')
+  .then((response) => { 
+      return response.text();
+  })
+  .then((html) => {
+      result.innerHTML = html     
+  });
+</script>
+</html>

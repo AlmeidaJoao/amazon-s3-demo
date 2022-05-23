@@ -1,0 +1,15 @@
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "url do bucket origin"
+      ],
+      "ExposeHeaders": [],
+      "MaxAgeSeconds": 3000
+  }
+]
